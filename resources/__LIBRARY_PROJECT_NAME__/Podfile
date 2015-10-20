@@ -1,4 +1,4 @@
-require File.expand_path('../../../lib/scripts/cocoapods/pod_post_install.rb', __FILE__)
+#require File.expand_path('../../lib/scripts/cocoapods/pod_post_install.rb', __FILE__)
 
 inhibit_all_warnings!
 source 'https://github.com/CocoaPods/Specs.git'
@@ -11,14 +11,12 @@ xcodeproj '__LIBRARY_PROJECT_NAME__'
 pod 'ReactiveCocoa'
 
 target :__LIBRARY_PROJECT_NAME__Tests, :exclusive => true do
-  pod 'SpecHelpers', :path => '../SpecHelpers'
-
   pod 'CoreFactoryGentleman', :git => 'git://github.com/soundcloud/CoreFactoryGentleman.git'
   pod 'Expecta'
   pod 'Specta', :git => 'https://github.com/specta/specta.git', :tag => 'v0.3.0.beta1'
   pod 'OCMockito'
 end
 
-post_install do |installer_representation|
- do_post_install(installer_representation)
-end
+#post_install do |installer_representation|
+# do_post_install(installer_representation)
+#end

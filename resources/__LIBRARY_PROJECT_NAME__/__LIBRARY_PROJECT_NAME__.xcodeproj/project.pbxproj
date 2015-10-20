@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4516B2651BD6308600FCEF5C /* __LIBRARY_PROJECT_NAME__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __LIBRARY_PROJECT_NAME__.h; sourceTree = "<group>"; };
 		45AB6BB01BD616D000B6ED2C /* __LIBRARY_PROJECT_NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __LIBRARY_PROJECT_NAME__.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AB6BB41BD616D000B6ED2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		45AB6BC01BD616D000B6ED2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				45AB6BE41BD6197800B6ED2C /* Classes */,
+				4516B2651BD6308600FCEF5C /* __LIBRARY_PROJECT_NAME__.h */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -432,6 +434,7 @@
 				45AB6BD71BD616D000B6ED2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45AB6BD81BD616D000B6ED2C /* Build configuration list for PBXNativeTarget "__LIBRARY_PROJECT_NAME__Tests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +443,7 @@
 				45AB6BDA1BD616D000B6ED2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
