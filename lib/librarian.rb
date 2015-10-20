@@ -1,5 +1,2 @@
-require "librarian/version"
-
-module Librarian
-  # Your code goes here...
-end
+require 'librarian/version'
+require 'librarian/library_generator'
