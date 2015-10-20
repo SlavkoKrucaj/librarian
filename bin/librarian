@@ -2,4 +2,4 @@
 
 require 'librarian/cli'
 
-Librarian::Cli.new(ARGV).run
+Librarian::Cli.start
