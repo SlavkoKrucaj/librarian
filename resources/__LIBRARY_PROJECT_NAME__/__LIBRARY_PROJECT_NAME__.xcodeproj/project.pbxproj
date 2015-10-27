@@ -10,9 +10,9 @@
 		45AB6BB51BD616D000B6ED2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB6BB41BD616D000B6ED2C /* main.m */; };
 		45AB6BC11BD616D000B6ED2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AB6BBF1BD616D000B6ED2C /* Main.storyboard */; };
 		45AB6BC61BD616D000B6ED2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AB6BC41BD616D000B6ED2C /* LaunchScreen.storyboard */; };
-		45AB6BE51BD6197800B6ED2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB6BDD1BD6197800B6ED2C /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		45AB6BE71BD6197800B6ED2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AB6BE01BD6197800B6ED2C /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		45AB6BE81BD6197800B6ED2C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB6BE21BD6197800B6ED2C /* MasterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		45AB6BE51BD6197800B6ED2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB6BDD1BD6197800B6ED2C /* AppDelegate.m */; };
+		45AB6BE71BD6197800B6ED2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AB6BE01BD6197800B6ED2C /* Images.xcassets */; };
+		45AB6BE81BD6197800B6ED2C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB6BE21BD6197800B6ED2C /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		4516B2651BD6308600FCEF5C /* __LIBRARY_PROJECT_NAME__.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __LIBRARY_PROJECT_NAME__.h; sourceTree = "<group>"; };
+		4561AD9A1BDFBBCB00337B43 /* Specs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		45AB6BB01BD616D000B6ED2C /* __LIBRARY_PROJECT_NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __LIBRARY_PROJECT_NAME__.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AB6BB41BD616D000B6ED2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		45AB6BC01BD616D000B6ED2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 			children = (
 				45AB6BEA1BD619AE00B6ED2C /* Pod */,
 				45AB6BD21BD616D000B6ED2C /* Info.plist */,
+				4561AD9A1BDFBBCB00337B43 /* Specs-Prefix.pch */,
 			);
 			path = __LIBRARY_PROJECT_NAME__Tests;
 			sourceTree = "<group>";
@@ -395,6 +397,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "__LIBRARY_PROJECT_NAME__Tests/Specs-Prefix.pch";
 				INFOPLIST_FILE = __LIBRARY_PROJECT_NAME__Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "slavkokrucaj.--LIBRARY-PROJECT-NAME--Tests";
@@ -407,6 +411,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "__LIBRARY_PROJECT_NAME__Tests/Specs-Prefix.pch";
 				INFOPLIST_FILE = __LIBRARY_PROJECT_NAME__Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "slavkokrucaj.--LIBRARY-PROJECT-NAME--Tests";

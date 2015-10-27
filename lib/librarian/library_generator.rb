@@ -24,7 +24,6 @@ module Librarian
     end
 
     def rename_template
-
       Dir.glob(glob_project_path).reverse.each do |path|
         new_path = File.join(File.dirname(path), substitute_template_with_project(File.basename(path)))
         File.rename(path, new_path)

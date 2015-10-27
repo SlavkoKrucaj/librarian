@@ -1,0 +1,24 @@
+#ifdef __OBJC__
+#import "SoundCloud-Prefix.pch"
+
+#import <FactoryGentleman/FactoryGentleman.h>
+#import <CoreFactoryGentleman/CoreFactoryGentleman.h>
+#import <Specta/Specta.h>
+
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
+
+#import <OCMock/OCMock.h>
+
+#define HC_SHORTHAND
+#import <objc/objc-api.h>
+#import <OCHamcrest/OCHamcrest.h>
+
+#define MOCKITO_SHORTHAND
+#import <OCMockito/OCMockito.h>
+
+#import <SpecHelpers/EXPMatchers+Assert.h>
+#import <SpecHelpers/EXPMatchers+ReactiveCocoa.h>
+#import <SpecHelpers/EXPMatchers+changeValue.h>
+#import <SpecHelpers/HCBlockMatcher.h>
+#endif
