@@ -3,7 +3,7 @@ require 'librarian'
 
 module Librarian
   class Cli < Thor
-    desc 'library', 'Auto-generates a Library pod'
+    desc 'generate', 'Auto-generates a Library pod'
     method_option :name, type: :string, aliases: '-n', desc: 'Name of the project'
     method_option :output, type: :string, aliases: '-o', desc: 'Location of the output directory'
     def generate
