@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'Classes'
   s.subspec 'Classes' do |classes|
-    classes.source_files = '__LIBRARY_PROJECT_NAME__/Pod/Classes/**/*.{h,m}'
+    classes.source_files = ['__LIBRARY_PROJECT_NAME__/Pod/Classes/**/*.{h,m}','__LIBRARY_PROJECT_NAME__/Pod/__LIBRARY_PROJECT_NAME__.h' ]
 
-    #classes.dependency 'SoundCloudApiLayer'
+    classes.dependency 'ReactiveCocoa'
   end
 end
